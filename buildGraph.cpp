@@ -26,6 +26,9 @@ public:
         }
         cout<<endl;
     }
+    ~Graph() {
+        delete[] l;
+    }
 };
 
 int main(){
