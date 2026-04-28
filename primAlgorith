@@ -28,6 +28,7 @@ int prismAlgo(int V, vector<vector<pair<int , int>>> &adj){
         auto p = pq.top();
         int wt = p.first;
         int u = p.second;
+        pq.pop();
 
         if(!inMST[u]){
             inMST[u]=true;
